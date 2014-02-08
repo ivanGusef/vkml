@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ifgroup.vkml">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".VkLoaderApplication"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/KindTheme">
+        <activity
+            android:name=".gui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KindTheme.NoActionBar"
+            android:screenOrientation="nosensor"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gui.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KindTheme.NoActionBar"
+            android:noHistory="true" />
+        <activity
+            android:name=".gui.AudioListActivity"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".gui.SettingsActivity"
+            android:label="@string/settings" />
+        <activity
+            android:name=".gui.FolderSelectorActivity"
+            android:label="@string/folder_select"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <service android:name=".client.service.AudioLoaderService" />
+        <!--android:process=":audio_loading"-->
+        <service
+            android:name=".client.service.DownloaderService"
+            android:process=":audio_loading" />
+        <!--android:process=":audio_loading"-->
+        <service android:name=".client.service.FileRemoveService" />
+
+        <provider
+            android:name=".db.AudioContentProvider"
+            android:authorities="com.ifgroup.vkloader.audioprovider"
+            android:exported="false"/>
+
+        <receiver android:name=".client.receiver.ServiceControllerReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.ifgroup.vkloader.TOKEN_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

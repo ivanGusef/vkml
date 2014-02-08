@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VkMusicLoader</string>
+    <string name="desc_download_status_btn">Картинка меняется в зависимости от статуса аудиозаписи. В случае если
+        аудиозапись существует локально картинка будет зеленая, иначе - красная
+    </string>
+    <string name="audio_title_template">%1$s - %2$s</string>
+
+    <!-- Жанры -->
+    <string name="rock">Rock</string>
+    <string name="pop">Pop</string>
+    <string name="rap_and_hip_hop">Rap &amp; Hip Hop</string>
+    <string name="easy_listening">Easy Listening</string>
+    <string name="dance_and_house">Dance &amp; House</string>
+    <string name="instrumental">Instrumental</string>
+    <string name="metal">Metal</string>
+    <string name="alternative">Alternative</string>
+    <string name="dubstep">Dubstep</string>
+    <string name="jazz_and_blues">Jazz &amp; Blues</string>
+    <string name="drum_and_bass">Drum &amp; Bass</string>
+    <string name="trance">Trance</string>
+    <string name="chanson">Chanson</string>
+    <string name="ethnic">Ethnic</string>
+    <string name="acoustic_and_vocal">Acoustic &amp; Vocal</string>
+    <string name="reggae">Reggae</string>
+    <string name="classical">Classical</string>
+    <string name="indie_pop">Indie Pop</string>
+    <string name="speech">Speech</string>
+    <string name="electropop_and_disco">Electropop &amp; Disco</string>
+    <string name="other">Other</string>
+    <string name="unknown">Unknown</string>
+    <string name="logout">Выйти</string>
+    <string name="setting_autodownload">Автозагрузка</string>
+    <string name="setting_folder">Папка для загрузки</string>
+    <string name="settings">Настройки</string>
+    <string name="setting_autodownload_description">После включения обеспечивает автоматическое скачивание всех
+        аудиозаписей, которые будут добавлены на мою станицу ВКонтакте
+    </string>
+    <string name="iv_desc_folder">folder</string>
+    <string name="desc_done_btn">Кнопка выбора папки</string>
+    <string name="create_folder">Создать папку</string>
+    <string name="back">Назад</string>
+    <string name="folder_select">Выбор папки для загрузки</string>
+    <string name="loading_profile">Загрузка пользовательских данных</string>
+    <string name="desc_app_icon">Иконка приложения</string>
+    <string name="loading">Идет загрузка</string>
+    <string name="online">В сети</string>
+    <string name="e_no_network">Отсутствует подключение к Интернету</string>
+    <string name="new_folder_name">Название новой папки</string>
+    <string name="cancel">Отмена</string>
+    <string name="create">Создать</string>
+    <string name="new_folder_creation">Создание новой папки</string>
+    <string name="unnamed">Без названия</string>
+    <string name="file_name_already_exists">Файл с таким именем уже существует</string>
+    <string name="folder_successfuly_created">Папка %1$s успешно создана</string>
+    <string name="e_folder_creation_failed">Не удалось создать папку</string>
+    <string name="file_name_cant_contains">Имя файла не должно содержать %1$s</string>
+    <string name="setting_wifi_only">\"Wi-Fi Only\"</string>
+    <string name="setting_wifi_only_description">Автозагрузка работает только в случае Wi-Fi соединения</string>
+    <string name="folder_empty">Папка пуста</string>
+    <string name="e_folder_not_exists">Папка, указанная для загрузки, не существует</string>
+    <string name="e_acra">Произошла напредвиденная ошибка</string>
+    <string name="folder">Folder</string>
+</resources>

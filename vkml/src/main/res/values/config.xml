@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_version_code">100</integer>
+    <integer name="db_version">1</integer>
+
+    <string name="app_version">1.0.0</string>
+    <string name="db_name">vkmusicloader.db</string>
+    <string name="sp_name">vkmusicloader</string>
+</resources>

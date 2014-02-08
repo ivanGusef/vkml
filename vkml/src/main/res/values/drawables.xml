@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="stub_downloaded">#a0f0af</drawable>
+    <drawable name="stub_downloading">#a0aff0</drawable>
+    <drawable name="stub_not_downloaded">#f0a0af</drawable>
+    <drawable name="stub_download_failed">#a040a0</drawable>
+</resources>
